@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDom from "react-dom/client"
+import { Greeting } from "./Greetibg"
+import Product from "./Product"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById("root")
+const root = ReactDom.createRoot(rootElement)
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <div> 
+        <Greeting title = "asd1"/>
+        <Greeting title = "asd2"/>
+        <Greeting title = "asd3"/>
+        <Greeting title = "asd4"/>
+        <Product/>
+    </div>
+           
+)
