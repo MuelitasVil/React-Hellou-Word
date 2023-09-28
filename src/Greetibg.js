@@ -26,7 +26,7 @@ export function Greeting( { title } ) {
         <h1> {titulo}</h1>
          <p> {estadoAnimo ? "Que bonito dia" : "Que mal dia"} </p>
          <p>{JSON.stringify(user)}</p>
-         <p>{ props.title }</p>
+         <p>{ title }</p>
          </div>
     
 }
